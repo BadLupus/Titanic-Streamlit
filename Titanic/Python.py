@@ -3,23 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import requests
-from io import StringIO
 
-github_raw_url = 'https://raw.githubusercontent.com/BadLupus/Titanic-Streamlit/edit/main/Titanic/train.csv'
-
-#Daten von der URL abrufen
-response = requests.get(github_raw_url)
-
-# Überprüfen, ob die Anfrage erfolgreich war
-if response.status_code == 200:
-    # Daten in DataFrame laden
-    df = pd.read_csv(StringIO(response.text))
-else:
-    print(f"Fehler beim Abrufen der Datei. Statuscode: {response.status_code}")
-github_raw_url = 'https://raw.githubusercontent.com/BadLupus/Titanic-Streamlit/edit/main/Titanic/train.csv'
-
-df = pd.read_csv(github_raw_url)
+df = pd.read_csv('Titanic/train.csv')
 
 st.title('Titanic: binary classification project')
 st. sidebar.title('Table of contents')
