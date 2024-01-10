@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-matplotlib.use("agg")
 import matplotlib.pyplot as plt
+matplotlib.use("agg")
 import seaborn as sns
 
 df = pd.read_csv('train.csv')
