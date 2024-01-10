@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-github_raw_url = 'https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv'
-df = pd.read_csv('Titanic\train.csv', sep=',')
+github_raw_url = 'https://github.com/BadLupus/Titanic-Streamlit/edit/main/Titanic/train.csv'
+df = pd.read_csv(github_raw_url)
 
 st.title('Titanic: binary classification project')
 st. sidebar.title('Table of contents')
