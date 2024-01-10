@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-github_raw_url = 'https://github.com/BadLupus/Titanic-Streamlit/edit/main/Titanic/train.csv'
+github_raw_url = 'https://raw.githubusercontent.com/BadLupus/Titanic-Streamlit/edit/main/Titanic/train.csv'
 df = pd.read_csv(github_raw_url)
 
 st.title('Titanic: binary classification project')
