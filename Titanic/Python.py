@@ -97,7 +97,7 @@ if page == pages[2]:
             clf = LogisticRegression()
         
         if clf is not None:
-            clf = joblib.load('model')
+            clf = joblib.load('Titanic/model')
             #clf = pickle.load(open('model', 'rb'))
         return clf
 
